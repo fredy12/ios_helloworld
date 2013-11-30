@@ -136,6 +136,11 @@
 				CLASSPREFIX = IOSHelloWorld;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Para Yang";
+				TargetAttributes = {
+					4B748EAE17662A9D00907F43 = {
+						DevelopmentTeam = 8RM648MHC3;
+					};
+				};
 			};
 			buildConfigurationList = 4B748EAA17662A9D00907F43 /* Build configuration list for PBXProject "IOSHelloWorld" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -261,10 +266,13 @@
 		4B748ED317662A9D00907F43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSHelloWorld/IOSHelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "IOSHelloWorld/IOSHelloWorld-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,10 +280,13 @@
 		4B748ED417662A9D00907F43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSHelloWorld/IOSHelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "IOSHelloWorld/IOSHelloWorld-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
